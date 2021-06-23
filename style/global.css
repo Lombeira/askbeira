@@ -20,6 +20,7 @@ html {
   --grey-blue: #a1b2cd;
   --grey-medium: #d3d9e2;
   --grey-light: #e5eaf1;
+  --grey-medium2: #eaecf2;
 
   /* 1rem = 16px (User Agent) = 100% (User Agent) */
   font-size: 62.5%; /* 10px */
@@ -84,7 +85,7 @@ button:hover,
   filter: brightness(1.2);
 }
 
-button > img 
+button > img,
 .button > img {
   margin-right: 1rem;
   width: 2rem;
@@ -97,6 +98,20 @@ button.outlined,
   border: 0.2rem solid var(--blue);
 }
 
+button.red,
+.button.red {
+  background: var(--red);
+  color: var(--white);
+}
+
+button.grey,
+.button.grey {
+  background: var(--grey-light);
+  color: var(--grey-dark);
+}
+
+/* HEADER */
+
 .content header {
   width: 80%;
   margin: 3.5rem auto;
@@ -105,4 +120,3 @@ button.outlined,
 .content header img {
   width: 16.7rem;
 }
-

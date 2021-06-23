@@ -11,6 +11,8 @@
     <!-- Style -->
     <link rel="stylesheet" href="style/global.css" />
     <link rel="stylesheet" href="style/room.css" />
+    <link rel="stylesheet" href="style/modal.css" />
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -21,62 +23,154 @@
   </head>
   <body>
     <div id="room" class="content">
-        <header>
-          <a href="#">
-              <img src="/assets/logo.svg" alt="Ask.beira Logo" />
-          </a> 
-          <div class="buttons">
-              <div class="button outlined">
-                  #323243
-                  <img src="assets/copy.svg" alt="Copiar número da sala">
-              </div>
-              <a class="button" href="#">
-                  <img src="assets/userswhite.svg" alt="Criar uma sala">
-                  Criar Sala
-              </a>
+      <header>
+        <a href="#">
+          <img src="/assets/logo.svg" alt="Ask.beira Logo" />
+        </a>
+        <div class="buttons">
+          <div class="button outlined">
+            #323243
+            <img src="assets/copy.svg" alt="Copiar número da sala" />
           </div>
-        </header>
-        <main>
-            <section id="question-form">
-                <h2>Faça sua perginta</h2>
-                <form action="">
-                    <label class="sr-only" for-id="question">O que você quer perguntar?</label>
-                    <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
-                    <footer>
-                        <div>
-                            <img src="assets/lock.svg" alt="Cadeado">
-                            Esta pergunta é anônima
-                        </div>
-                        <button>Enviar</button>
-                    </footer>
-                </form>
-            </section>
-            <section id="questions">
-                <h2 class="sr-only">Perguntas da comunidade</h2>
-                <div class="questions">
-                    <div class="question-wrapper">
-                        <div class="question-content">
-                            <div class="user">
-                                <img src="assets/avatar.svg" alt="Avatar">
-                            </div>
-                            <div class="question">
-                                <p>Qual a diferença entre const, var e let no JavaScript?</p>
-                            </div>
-                        </div>
-                        <div class="actions">
-                            <a class="check"href="#">
-                                <img src="assets/check.svg" alt="Marcar como lida">
-                                Marcar como lida
-                            </a>
-                            <a class="delete" href="#">
-                                <img src="assets/trash.svg" alt="Excluir">
-                                Excluir
-                            </a>
-                        </div>
-                    </div>
+          <a class="button" href="#">
+            <img src="assets/userswhite.svg" alt="Criar uma sala" />
+            Criar Sala
+          </a>
+        </div>
+      </header>
+      <main>
+        <section id="question-form">
+          <h2>Faça sua perginta</h2>
+          <form action="">
+            <label class="sr-only" for-id="question"
+              >O que você quer perguntar?</label
+            >
+            <textarea
+              name="question"
+              id="question"
+              placeholder="O que você quer perguntar?"
+            ></textarea>
+            <footer>
+              <div>
+                <img src="assets/lock.svg" alt="Cadeado" />
+                Esta pergunta é anônima
+              </div>
+              <button>Enviar</button>
+            </footer>
+          </form>
+        </section>
+        <section id="questions">
+          <h2 class="sr-only">Perguntas da comunidade</h2>
+          <div class="questions">
+            <div class="question-wrapper">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.svg" alt="Avatar" />
                 </div>
-            </section>
-        </main>
+                <div class="question">
+                  <p>Qual a diferença entre const, var e let no JavaScript?</p>
+                </div>
+              </div>
+              <div class="actions">
+                <a class="check" href="#">
+                  <img src="assets/check.svg" alt="Marcar como lida" />
+                  Marcar como lida
+                </a>
+                <a class="delete" href="#">
+                  <img src="assets/trash.svg" alt="Excluir" />
+                  Excluir
+                </a>
+              </div>
+            </div>
+            <div class="question-wrapper">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.svg" alt="Avatar" />
+                </div>
+                <div class="question">
+                  <p>O que é Typescript?</p>
+                </div>
+              </div>
+              <div class="actions">
+                <a class="check" href="#">
+                  <img src="assets/check.svg" alt="Marcar como lida" />
+                  Marcar como lida
+                </a>
+                <a class="delete" href="#">
+                  <img src="assets/trash.svg" alt="Excluir" />
+                  Excluir
+                </a>
+              </div>
+            </div>
+            <div class="question-wrapper">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.svg" alt="Avatar" />
+                </div>
+                <div class="question">
+                  <p>
+                    Você já sabe quais as bases você precisa melhorar para
+                    alcançar o seu próximo nível com maestria? Estou curioso e
+                    embasbacado com a sua perseverança por ter alcançado a
+                    terceira aula e sei que ocê vai continuar até o fim. Estou
+                    esperando para ser surpreendido positivamente com a sua
+                    perseverança
+                  </p>
+                </div>
+              </div>
+              <div class="actions">
+                <a class="check" href="#">
+                  <img src="assets/check.svg" alt="Marcar como lida" />
+                  Marcar como lida
+                </a>
+                <a class="delete" href="#">
+                  <img src="assets/trash.svg" alt="Excluir" />
+                  Excluir
+                </a>
+              </div>
+            </div>
+            <div class="question-wrapper read">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.svg" alt="Avatar" />
+                </div>
+                <div class="question">
+                  <p>O que é JavaScript?</p>
+                </div>
+              </div>
+              <div class="actions">
+                <a class="delete" href="#">
+                  <img src="assets/trash.svg" alt="Excluir" />
+                  Excluir
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-wrapper">
+      <div class="modal">
+        <h2>Excluir</h2>
+        <p>Tem certeza que você deseja excluir esta pergunta?</p>
+        <form action="#">
+          <label class="sr-only" for-id="password">
+            Digite sua senha.
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Digite sua senha"
+          />
+          <div class="buttons">
+            <div class="button grey">Cancelar</div>
+            <button class="red">Sim, excluir</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
