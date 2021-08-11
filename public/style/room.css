@@ -35,7 +35,7 @@
 
 /* question form  */
 #question-form h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.8rem;
   color: var(--black);
   font-weight: 700;
@@ -71,7 +71,7 @@
   display: flex;
   align-items: center;
   color: var(--icons-details);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
 }
@@ -139,4 +139,30 @@
 
 .question-wrapper.read .question-content .user {
   background: var(--grey-blue);
+}
+
+/* No Questions */
+
+.no-questions {
+  text-align: center;
+  margin-top: 5.2rem;
+}
+
+.no-questions img {
+  width: 120px;
+}
+
+.no-questions p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+}
+
+.no-questions p + p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 1.3rem;
+  line-height: 1.9rem;
 }
